@@ -14,6 +14,15 @@
   gtag('js', new Date());
   gtag('config', 'G-SNJJ9XXLEM');
 </script>
+<style>
+  .shots { display: flex; gap: 22px; margin-top: 26px; }
+  .shot { flex: 1; min-width: 0; }
+  .shot img { width: 100%; height: auto; display: block; border-radius: 12px; border: 1px solid #dcebe4; box-shadow: 0 14px 40px rgba(13, 34, 25, 0.12); }
+  .shot figcaption { font-size: 13px; color: var(--soft, #5b6f67); margin-top: 10px; line-height: 1.5; }
+  .tiles-row { max-width: 660px; margin: 0 auto 34px; }
+  .tiles-row img { width: 100%; height: auto; display: block; }
+  @media (max-width: 860px) { .shots { flex-direction: column; } }
+</style>
 </head>
 <body>
 
@@ -55,6 +64,9 @@
     <div class="kicker">One system, four agents</div>
     <h2 class="section-title">Every place money hides, covered.</h2>
     <p class="section-sub">Your audit runs every chapter your data supports, and the agents you keep work together as one closed system on your own computer.</p>
+    <div class="tiles-row">
+      <img src="/images/agent-tiles-row.svg" alt="The four agents: Money, Leads, Inbox, Marketing" loading="lazy" width="800" height="200">
+    </div>
     <div class="cards" style="grid-template-columns:repeat(2,1fr);">
       <div class="card">
         <h3>The Money Agent</h3>
@@ -104,10 +116,28 @@
 </section>
 
 <section class="section-alt">
+  <div class="wrap">
+    <div class="kicker">What lands on your screen</div>
+    <h2 class="section-title">The dashboard talks. The report proves.</h2>
+    <p class="section-sub">Produced on your computer, from your data, and refreshed every time you run the workforce: daily if you like, weekly for a leads check, the full audit monthly. Sample shown with fictional data.</p>
+    <div class="shots">
+      <figure class="shot">
+        <img src="/images/dashboard-full.png" alt="The OwnerAudits dashboard: reassurance ribbon, health score, four agent cards, and revenue charts" loading="lazy">
+        <figcaption>The dashboard opens with where you stand ("You are not in the red"), then each agent reports in plain English, with the graphs to back it up.</figcaption>
+      </figure>
+      <figure class="shot">
+        <img src="/images/report-full.png" alt="The Business Audit report: health score hero, identified recoveries, and dimension scorecard" loading="lazy">
+        <figcaption>The written audit: your Health Score out of 100, identified recoveries with invoice numbers, and the scoreboard against your own goals.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section>
   <div class="wrap narrow">
     <div class="kicker">The part nobody else does</div>
-    <h2 class="section-title">Monthly, your agents score you against your goals.</h2>
-    <p style="margin-bottom:14px;">Your first audit sets the baseline and your goals: what outstanding should shrink to, what recurring revenue should grow to, what conversion should hold at. Every month you drop in fresh exports and say "run my business audit." The system rebuilds the whole report and your dashboard, and opens with the scoreboard: what moved, what is improving, what is slipping, and whether you are on target, measure by measure.</p>
+    <h2 class="section-title">Every run, your agents score you against your goals.</h2>
+    <p style="margin-bottom:14px;">Your first audit sets the baseline and your goals: what outstanding should shrink to, what recurring revenue should grow to, what conversion should hold at. Then run it on your rhythm: most owners do the full audit monthly, with quick checks in between whenever they want them. Each run rebuilds the whole report and your dashboard, and opens with the scoreboard: what moved, what is improving, what is slipping, and whether you are on target, measure by measure.</p>
     <p>Down the road, when you want the workforce to do something new, OwnerAudits builds small custom add-on agents for existing customers, typically $59.99, delivered into the same folder. That is the difference between a report you read once and a system that keeps you honest all year. And because it runs on your computer with your own Claude account, there is no subscription to us, ever.</p>
     <p style="margin-top:14px;"><b style="color:var(--ink);">For scale:</b> a fractional CFO delivers a packet like this for roughly $2,800 a month, and recovery-audit firms keep 20 to 30 percent of every dollar they find. This is $499, once, and you keep 100 percent of everything it identifies.</p>
   </div>

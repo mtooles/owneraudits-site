@@ -1,0 +1,50 @@
+<svg viewBox="0 0 800 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="5"/>
+    </filter>
+  </defs>
+
+  <!-- Money tile -->
+  <rect x="52" y="30" width="96" height="96" rx="24" fill="#13221d" opacity="0.10" filter="url(#soft)"/>
+  <rect x="52" y="24" width="96" height="96" rx="24" fill="#0d7a5e"/>
+  <g transform="translate(100,66)" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M0 -19 V19"/>
+    <path d="M9 -11 C9 -17 -9 -17 -9 -10 C-9 -3 9 -4 9 4 C9 11 -9 11 -9 5"/>
+  </g>
+  <polyline points="74,104 86,97 96,101 108,92 122,96" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.55"/>
+  <text x="100" y="154" text-anchor="middle" font-family="-apple-system, Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#13221d">Money</text>
+
+  <!-- Leads tile -->
+  <rect x="252" y="30" width="96" height="96" rx="24" fill="#13221d" opacity="0.10" filter="url(#soft)"/>
+  <rect x="252" y="24" width="96" height="96" rx="24" fill="#0a5c47"/>
+  <circle cx="288" cy="45" r="2.5" fill="#ffffff" opacity="0.8"/>
+  <circle cx="300" cy="39" r="2.5" fill="#ffffff" opacity="0.8"/>
+  <circle cx="312" cy="45" r="2.5" fill="#ffffff" opacity="0.8"/>
+  <g transform="translate(300,76)" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M-15 -13 H15 L5 1 V14 L-5 9 V1 Z"/>
+  </g>
+  <text x="300" y="154" text-anchor="middle" font-family="-apple-system, Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#13221d">Leads</text>
+
+  <!-- Inbox tile -->
+  <rect x="452" y="30" width="96" height="96" rx="24" fill="#13221d" opacity="0.10" filter="url(#soft)"/>
+  <rect x="452" y="24" width="96" height="96" rx="24" fill="#0d7a5e"/>
+  <rect x="452" y="24" width="96" height="96" rx="24" fill="#ffffff" opacity="0.10"/>
+  <g transform="translate(500,74)" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="-16" y="-12" width="32" height="24" rx="4"/>
+    <path d="M-16 -9 L0 4 L16 -9"/>
+  </g>
+  <circle cx="531" cy="43" r="5.5" fill="#f0b429"/>
+  <text x="500" y="154" text-anchor="middle" font-family="-apple-system, Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#13221d">Inbox</text>
+
+  <!-- Marketing tile -->
+  <rect x="652" y="30" width="96" height="96" rx="24" fill="#13221d" opacity="0.10" filter="url(#soft)"/>
+  <rect x="652" y="24" width="96" height="96" rx="24" fill="#0a5c47"/>
+  <rect x="652" y="24" width="96" height="96" rx="24" fill="#ffffff" opacity="0.07"/>
+  <g transform="translate(700,68)" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M-15 -6 L7 -14 L7 14 L-15 6 Z"/>
+    <path d="M12 -8 A10.5 10.5 0 0 1 12 8"/>
+  </g>
+  <polyline points="678,104 690,97 700,101 712,92 724,96" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.55"/>
+  <text x="700" y="154" text-anchor="middle" font-family="-apple-system, Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#13221d">Marketing</text>
+</svg>

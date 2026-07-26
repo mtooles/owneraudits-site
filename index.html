@@ -14,6 +14,21 @@
   gtag('js', new Date());
   gtag('config', 'G-SNJJ9XXLEM');
 </script>
+<style>
+  .hero-grid { display: flex; align-items: center; gap: 40px; }
+  .hero-grid > div:first-child { flex: 1.1; }
+  .hero-art { flex: 1; min-width: 0; }
+  .hero-art img { width: 100%; height: auto; display: block; }
+  .shots { display: flex; gap: 22px; margin-top: 26px; }
+  .shot { flex: 1; min-width: 0; }
+  .shot img { width: 100%; height: auto; display: block; border-radius: 12px; border: 1px solid #dcebe4; box-shadow: 0 14px 40px rgba(13, 34, 25, 0.12); }
+  .shot figcaption { font-size: 13px; color: var(--soft, #5b6f67); margin-top: 10px; line-height: 1.5; }
+  .rhythm { max-width: 640px; margin: 34px auto 0; }
+  .rhythm img { width: 100%; height: auto; display: block; }
+  .tiles-row { max-width: 660px; margin: 0 auto 34px; }
+  .tiles-row img { width: 100%; height: auto; display: block; }
+  @media (max-width: 860px) { .hero-grid { flex-direction: column; } .shots { flex-direction: column; } }
+</style>
 </head>
 <body>
 
@@ -21,24 +36,27 @@
   <div class="wrap nav">
     <a class="logo" href="/"><svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true"><rect width="26" height="26" rx="6" fill="#0d7a5e"/><path d="M7 13.5l4 4 8-9" stroke="#fff" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>Owner<b>Audits</b></a>
     <nav class="nav-links">
-      <a href="/money-audit.html">Money Audit</a>
-      <a href="/inbox-audit.html" class="hide-m">Inbox Audit</a>
-      <a href="/lead-audit.html" class="hide-m">Lead Audit</a>
+      <a href="/sample-report.html">Sample report</a>
       <a href="/faq.html">FAQ</a>
       <a href="/about.html" class="hide-m">About</a>
-      <a class="btn" href="/#audits">See the audits</a>
+      <a class="btn" href="/business-audit.html">The Business Audit</a>
     </nav>
   </div>
 </header>
 
 <div class="hero">
-  <div class="wrap">
-    <span class="eyebrow">One-time business audits</span>
-    <h1>Find what your business is leaking. Keep the tool that found it.</h1>
-    <p class="lede">A workforce of four AI agents downloads to your computer, connects to your own tools, and audits your whole business: money, customers, leads, and marketing. You get the report, the dashboard, and the agents. Your data never leaves your machine. Pay once. Own it. No subscription, ever.</p>
-    <div class="cta-row">
-      <a class="btn btn-big" href="/business-audit.html">The Business Audit, $499</a>
-      <a class="btn-ghost btn-big" href="#how">How it works</a>
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow">One-time business audits</span>
+      <h1>Find what your business is leaking. Keep the tool that found it.</h1>
+      <p class="lede">A workforce of four AI agents downloads to your computer, connects to your own tools, and audits your whole business: money, customers, leads, and marketing. You get the report, the dashboard, and the agents. Your data never leaves your machine. Pay once. Own it. No subscription, ever.</p>
+      <div class="cta-row">
+        <a class="btn btn-big" href="/business-audit.html">The Business Audit, $499</a>
+        <a class="btn-ghost btn-big" href="#see">See what you get</a>
+      </div>
+    </div>
+    <div class="hero-art">
+      <img src="/images/agents-at-work.svg" alt="Four AI agents feeding one clear dashboard of a business" width="900" height="560">
     </div>
   </div>
 </div>
@@ -52,11 +70,35 @@
   </div>
 </div>
 
-<section id="audits">
+<section id="see">
+  <div class="wrap">
+    <div class="kicker">What lands on your screen</div>
+    <h2 class="section-title">A dashboard that talks like a person. A report that reads like a CFO wrote it.</h2>
+    <p class="section-sub">Both are produced on your computer, from your data, and refreshed every time you run the workforce: daily if you want a numbers check, weekly for leads, and the full audit monthly. Every run adds a bar to your trend. Sample shown with fictional data.</p>
+    <div class="shots">
+      <figure class="shot">
+        <img src="/images/dashboard-full.png" alt="The OwnerAudits dashboard: reassurance ribbon, health score, four agent cards, and revenue charts" loading="lazy">
+        <figcaption>The dashboard opens with where you stand, then each agent reports in plain English: what the invoices say, what the leads say, what is sitting in the inbox.</figcaption>
+      </figure>
+      <figure class="shot">
+        <img src="/images/report-full.png" alt="The Business Audit report: health score hero, identified recoveries, and dimension scorecard" loading="lazy">
+        <figcaption>The written audit: your Health Score out of 100, identified recoveries with invoice numbers attached, and a scoreboard against your own goals.</figcaption>
+      </figure>
+    </div>
+    <div class="rhythm">
+      <img src="/images/monthly-rhythm.svg" alt="Each monthly run adds to the trend" loading="lazy" width="800" height="180">
+    </div>
+  </div>
+</section>
+
+<section class="section-alt" id="audits">
   <div class="wrap">
     <div class="kicker">The audits</div>
     <h2 class="section-title">Every place money hides, covered in one audit.</h2>
     <p class="section-sub">One product, one price: The Business Audit, $499. These are its chapters, and the agents you keep for each.</p>
+    <div class="tiles-row">
+      <img src="/images/agent-tiles-row.svg" alt="The four agents: Money, Leads, Inbox, Marketing" loading="lazy" width="800" height="200">
+    </div>
     <div class="cards">
       <div class="card">
         <h3>The Money Audit</h3>
@@ -101,7 +143,7 @@
   </div>
 </section>
 
-<section class="section-alt" id="how">
+<section id="how">
   <div class="wrap">
     <div class="kicker">How it works</div>
     <h2 class="section-title">Four steps, one evening, zero meetings.</h2>
@@ -124,7 +166,7 @@
       <div class="step">
         <div class="num"></div>
         <h3>Keep the workforce</h3>
-        <p>Monthly, the agents rebuild your report and dashboard and score you against your goals. Forever, at no further cost from us.</p>
+        <p>Run it as often as you like: a daily numbers check, a weekly look at leads, the full audit monthly. Every run refreshes the dashboard and adds to your trend. Forever, at no further cost from us.</p>
       </div>
     </div>
   </div>
@@ -153,11 +195,11 @@
     </details>
     <details>
       <summary>Is my data safe?</summary>
-      <p>You export your own data from your own tools and upload it through a secure form. We use it for exactly one purpose, producing your audit, then delete it after delivery. We never sell it, share it, or use it to train anything. Full details in the <a href="/privacy.html">privacy policy</a>.</p>
+      <p>Safer than safe: it never travels. The workforce runs on your own computer and connects to your own tools with your own logins. Nothing is uploaded to us, ever. There is no server of ours holding your numbers, which means there is nothing to breach, sell, or subpoena. Full details in the <a href="/privacy.html">privacy policy</a>.</p>
     </details>
     <details>
       <summary>How fast is delivery?</summary>
-      <p>Upload instructions arrive within a few hours of purchase. Your report and agent arrive within 48 hours of us receiving your complete upload.</p>
+      <p>Your download arrives by email right after checkout. Setup is honest work: 30 to 45 minutes including the get-to-know interview, and your first full audit lands minutes after that.</p>
     </details>
     <details>
       <summary>What if the audit finds nothing?</summary>
@@ -172,12 +214,11 @@
 
 <section>
   <div class="wrap" style="text-align:center;">
-    <h2 class="section-title">Pick the leak you want found first.</h2>
-    <p class="section-sub" style="margin:0 auto 32px;">Most owners start with the Money Audit. It pays for the other two.</p>
+    <h2 class="section-title">One audit. Four agents. Yours.</h2>
+    <p class="section-sub" style="margin:0 auto 32px;">The whole business, x-rayed on your own computer, and the workforce that keeps it that way.</p>
     <div class="cta-row" style="justify-content:center;">
       <a class="btn btn-big" href="/business-audit.html">Get the Business Audit, $499</a>
-      <a class="btn-ghost btn-big" href="/inbox-audit.html">The Inbox Audit</a>
-      <a class="btn-ghost btn-big" href="/lead-audit.html">The Lead Audit</a>
+      <a class="btn-ghost btn-big" href="/sample-report.html">Read the sample report</a>
     </div>
   </div>
 </section>

@@ -1,0 +1,26 @@
+<svg viewBox="0 0 400 260" xmlns="http://www.w3.org/2000/svg">
+  <!-- gauge bands: 0-55 red-ish, 55-70 amber, 70-85 light green, 85-100 brand green -->
+  <g fill="none" stroke-width="24">
+    <path d="M70 200 A130 130 0 0 1 218.1 71.3" stroke="#c9542f"/>
+    <path d="M222.6 72.0 A130 130 0 0 1 274.6 93.5" stroke="#f0b429"/>
+    <path d="M278.2 96.2 A130 130 0 0 1 314.8 139.0" stroke="#7fb069"/>
+    <path d="M316.8 143.0 A130 130 0 0 1 330 200" stroke="#0d7a5e"/>
+  </g>
+
+  <!-- tick marks at 0 / 55 / 70 / 85 / 100 -->
+  <g stroke="#13221d" stroke-width="2.5" stroke-linecap="round" opacity="0.6">
+    <line x1="54" y1="200" x2="44" y2="200"/>
+    <line x1="222.8" y1="55.8" x2="224.4" y2="45.9"/>
+    <line x1="285.8" y1="81.9" x2="291.7" y2="73.8"/>
+    <line x1="330.1" y1="133.7" x2="339.0" y2="129.2"/>
+    <line x1="346" y1="200" x2="356" y2="200"/>
+  </g>
+
+  <!-- needle at 62 -->
+  <polygon points="236.8,107 203.7,201.5 196.3,198.5" fill="#13221d" stroke="#13221d" stroke-width="2" stroke-linejoin="round"/>
+  <circle cx="200" cy="200" r="11" fill="#13221d"/>
+  <circle cx="200" cy="200" r="4.5" fill="#f4faf7"/>
+
+  <!-- score readout -->
+  <text x="200" y="251" text-anchor="middle" font-family="-apple-system, Helvetica, Arial, sans-serif" font-size="40" font-weight="700" fill="#13221d">62<tspan dx="4" font-size="14" font-weight="600" fill-opacity="0.55">/100</tspan></text>
+</svg>
