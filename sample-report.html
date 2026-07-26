@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Sample Report: The Money Audit | OwnerAudits</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+         color:#465261; background:#fff; font-size:14px; line-height:1.6; }
+  .page { max-width:840px; margin:0 auto; padding:48px 40px; }
+  h1,h2,h3 { color:#131c28; letter-spacing:-0.015em; }
+  .brand { display:flex; align-items:center; gap:8px; font-weight:700; font-size:17px; color:#131c28; }
+  .brand b { color:#0d7a5e; }
+  .cover-kicker { font-size:12px; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+                  color:#0d7a5e; margin:36px 0 10px; }
+  h1 { font-size:32px; margin-bottom:6px; }
+  .cover-sub { font-size:15px; color:#465261; margin-bottom:30px; }
+  .stats { display:grid; grid-template-columns:repeat(4,1fr); gap:14px; margin:24px 0 8px; }
+  .stat { border:1px solid #e4e8ee; border-radius:10px; padding:16px; }
+  .stat-value { font-size:22px; font-weight:700; color:#131c28; }
+  .stat-hot .stat-value { color:#0d7a5e; }
+  .stat-label { font-size:12px; font-weight:600; text-transform:uppercase; letter-spacing:.05em; margin-top:4px; }
+  .stat-sub { font-size:12px; color:#6b7686; margin-top:2px; }
+  h2 { font-size:20px; margin:40px 0 6px; }
+  .section-sub { margin-bottom:14px; font-size:13.5px; }
+  table { width:100%; border-collapse:collapse; margin-top:8px; }
+  th { text-align:left; font-size:11px; text-transform:uppercase; letter-spacing:.05em;
+       color:#6b7686; padding:8px 10px; border-bottom:2px solid #e4e8ee; }
+  td { padding:9px 10px; border-bottom:1px solid #e4e8ee; vertical-align:top; }
+  td.num, th.num { text-align:right; font-variant-numeric:tabular-nums; }
+  .badge { display:inline-block; font-size:11px; font-weight:700; padding:2px 9px; border-radius:999px; }
+  .overdue-mild { background:#e7f4ef; color:#0d7a5e; }
+  .overdue-warm { background:#fdf3e2; color:#9a6b15; }
+  .overdue-hot { background:#fdeaea; color:#b03434; }
+  .notyet { background:#eef1f5; color:#5b6675; }
+  td.nowrap { white-space:nowrap; }
+  .barcell { width:34%; }
+  .bar { height:10px; border-radius:5px; background:#0d7a5e; }
+  .callout { border:1px solid #e4e8ee; border-left:4px solid #0d7a5e; border-radius:0 10px 10px 0;
+             background:#f6f8fa; padding:18px 20px; margin:18px 0; }
+  .callout h3 { font-size:15px; margin-bottom:6px; }
+  ol.plan { margin:10px 0 0 20px; }
+  ol.plan li { margin-bottom:10px; }
+  .draft { border:1px solid #e4e8ee; border-radius:10px; padding:16px 18px; margin:14px 0;
+           page-break-inside:avoid; }
+  .draft-head { display:flex; gap:10px; align-items:center; margin-bottom:8px; flex-wrap:wrap; }
+  .draft-meta { font-size:12.5px; color:#6b7686; }
+  .draft-subject { font-weight:600; color:#131c28; margin-bottom:6px; }
+  .draft-body { font-family:inherit; white-space:pre-wrap; font-size:13.5px; background:#f6f8fa;
+                border-radius:8px; padding:12px 14px; }
+  .foot { margin-top:44px; padding-top:16px; border-top:1px solid #e4e8ee; font-size:12px; color:#6b7686; }
+  @media print { .page { padding:24px 8px; } h2 { page-break-after:avoid; } }
+</style>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SNJJ9XXLEM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-SNJJ9XXLEM');
+</script>
+</head>
+<body>
+<div class="page">
+  <div style="border:1px solid #e4e8ee;border-left:4px solid #0d7a5e;background:#f6f8fa;
+              border-radius:0 10px 10px 0;padding:12px 16px;margin-bottom:26px;font-size:13px;">
+    <b style="color:#131c28;">This is a sample.</b> Brightside Design Studio is a fictional
+    business; every name and number on this page is illustrative. Your report is built from
+    your data and looks exactly like this.
+    <a href="/money-audit.html" style="color:#0d7a5e;">Get the Money Audit, $497</a>
+  </div>
+  <div class="brand"><svg width="24" height="24" viewBox="0 0 26 26"><rect width="26" height="26" rx="6" fill="#0d7a5e"/><path d="M7 13.5l4 4 8-9" stroke="#fff" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>Owner<b>Audits</b></div>
+
+  <div class="cover-kicker">The Money Audit</div>
+  <h1>Brightside Design Studio</h1>
+  <p class="cover-sub">Every dollar you billed, reconciled against every dollar that arrived. Prepared July 25, 2026.</p>
+
+  <div class="stats">
+    <div class="stat stat-hot">
+      <div class="stat-value">$12,395.00</div>
+      <div class="stat-label">Collectable now</div>
+      <div class="stat-sub">7 invoices, 15+ days past due</div>
+    </div>
+    
+    <div class="stat">
+      <div class="stat-value">$13,965.00</div>
+      <div class="stat-label">Total outstanding</div>
+      <div class="stat-sub">9 open invoices</div>
+    </div>
+    
+    <div class="stat">
+      <div class="stat-value">$2,050.00</div>
+      <div class="stat-label">Unmatched deposits</div>
+      <div class="stat-sub">2 payments, no invoice</div>
+    </div>
+    
+    <div class="stat">
+      <div class="stat-value">2</div>
+      <div class="stat-label">Paid but shown open</div>
+      <div class="stat-sub">bookkeeping fixes</div>
+    </div>
+  </div>
+
+  <div class="callout">
+    <h3>The picture in one paragraph</h3>
+    <p>We reconciled 37 invoices against 31 incoming
+    payments. $13,965.00 is currently unpaid, of which
+    $12,395.00 is 15 or more days past due and worth chasing this week
+    with the prepared follow-ups at the end of this report. $2,050.00
+    arrived in your accounts without ever being matched to an invoice, and
+    2 invoices show open in your
+    books despite payment arriving.
+    Every item is listed below with the exact fix.</p>
+  </div>
+
+  <h2>What is unpaid, oldest first</h2>
+  <p class="section-sub">Every open invoice as of July 25, 2026, ranked by how long it has waited.</p>
+  <table>
+    <tr><th>Invoice</th><th>Customer</th><th>Due</th><th class="num">Open amount</th><th>Past due</th></tr>
+    
+        <tr>
+          <td class="nowrap">1042</td>
+          <td>Atlas Property Management</td>
+          <td>Apr 21, 2026</td>
+          <td class="num">$2,400.00</td>
+          <td><span class="badge overdue-hot">95 days</span></td>
+        </tr>
+        <tr>
+          <td class="nowrap">1051</td>
+          <td>TrueNorth HVAC</td>
+          <td>May 14, 2026</td>
+          <td class="num">$1,850.00</td>
+          <td><span class="badge overdue-hot">72 days</span></td>
+        </tr>
+        <tr>
+          <td class="nowrap">1058</td>
+          <td>Morrow Legal</td>
+          <td>May 25, 2026</td>
+          <td class="num">$3,200.00</td>
+          <td><span class="badge overdue-hot">61 days</span></td>
+        </tr>
+        <tr>
+          <td class="nowrap">1063</td>
+          <td>Peak Fitness Co (partial payment received)</td>
+          <td>Jun 07, 2026</td>
+          <td class="num">$475.00</td>
+          <td><span class="badge overdue-warm">48 days</span></td>
+        </tr>
+        <tr>
+          <td class="nowrap">1067</td>
+          <td>Lakeview Realty</td>
+          <td>Jun 16, 2026</td>
+          <td class="num">$1,540.00</td>
+          <td><span class="badge overdue-warm">39 days</span></td>
+        </tr>
+        <tr>
+          <td class="nowrap">1071</td>
+          <td>Cedar &amp; Sage Cafe</td>
+          <td>Jun 28, 2026</td>
+          <td class="num">$680.00</td>
+          <td><span class="badge overdue-mild">27 days</span></td>
+        </tr>
+        <tr>
+          <td class="nowrap">1074</td>
+          <td>Harbor Dental Group</td>
+          <td>Jul 04, 2026</td>
+          <td class="num">$2,250.00</td>
+          <td><span class="badge overdue-mild">21 days</span></td>
+        </tr>
+        <tr>
+          <td class="nowrap">1078</td>
+          <td>Bloom Marketing</td>
+          <td>Jul 13, 2026</td>
+          <td class="num">$1,120.00</td>
+          <td><span class="badge overdue-mild">12 days</span></td>
+        </tr>
+        <tr>
+          <td class="nowrap">1080</td>
+          <td>Riverbend Church</td>
+          <td>Jul 19, 2026</td>
+          <td class="num">$450.00</td>
+          <td><span class="badge overdue-mild">6 days</span></td>
+        </tr>
+  </table>
+
+  <h2>The aging picture</h2>
+  <p class="section-sub">Where your receivables stand by age. Money right of the 30-day line collects at a steeply lower rate, which is why the follow-ups below start with the oldest.</p>
+  <table>
+    <tr><th>Age</th><th class="num">Invoices</th><th class="num">Amount</th><th></th></tr>
+    
+        <tr>
+          <td>1 to 14 days</td>
+          <td class="num">2</td>
+          <td class="num">$1,570.00</td>
+          <td class="barcell"><div class="bar" style="width:31%"></div></td>
+        </tr>
+        <tr>
+          <td>15 to 30 days</td>
+          <td class="num">2</td>
+          <td class="num">$2,930.00</td>
+          <td class="barcell"><div class="bar" style="width:58%"></div></td>
+        </tr>
+        <tr>
+          <td>31 to 60 days</td>
+          <td class="num">2</td>
+          <td class="num">$2,015.00</td>
+          <td class="barcell"><div class="bar" style="width:39%"></div></td>
+        </tr>
+        <tr>
+          <td>61 to 90 days</td>
+          <td class="num">2</td>
+          <td class="num">$5,050.00</td>
+          <td class="barcell"><div class="bar" style="width:100%"></div></td>
+        </tr>
+        <tr>
+          <td>over 90 days</td>
+          <td class="num">1</td>
+          <td class="num">$2,400.00</td>
+          <td class="barcell"><div class="bar" style="width:47%"></div></td>
+        </tr>
+  </table>
+
+  <h2>Money that arrived but never got matched</h2>
+  <p class="section-sub">Deposits with no invoice behind them. Usually a prepayment, a missing invoice, or revenue recorded under the wrong name. Each one deserves a home.</p>
+  <table>
+    <tr><th>Date</th><th>Bank description</th><th class="num">Amount</th><th>Best guess</th></tr>
+    
+        <tr><td>Jun 09, 2026</td><td>ACH DEPOSIT SUNRISE PEDIATR RETAINER</td>
+        <td class="num">$1,200.00</td><td>Possibly Sunrise Pediatrics</td></tr>
+        <tr><td>Jul 02, 2026</td><td>ZELLE PAYMENT J MORROW</td>
+        <td class="num">$850.00</td><td>Possibly Morrow Legal</td></tr>
+  </table>
+
+  <h2>Paid, but your books say open</h2>
+  <p class="section-sub">These invoices have a matching payment in the bank, yet still show an open balance. Mark them paid so your receivables number tells the truth.</p>
+  <table>
+    <tr><th>Invoice</th><th>Customer</th><th class="num">Amount</th><th>What we found</th></tr>
+    
+        <tr><td>1029</td><td>Harbor Dental Group</td>
+        <td class="num">$780.00</td><td>Payment received Apr 15, 2026; invoice still shows open</td></tr>
+        <tr><td>1035</td><td>Lakeview Realty</td>
+        <td class="num">$2,150.00</td><td>Payment received Apr 28, 2026; invoice still shows open</td></tr>
+  </table>
+
+  <h2>The pattern worth fixing</h2>
+  <p class="section-sub">Customers who pay late again and again. Chasing is a treadmill; changing their terms is a fix.</p>
+  <table>
+    <tr><th>Customer</th><th class="num">Late payments</th><th class="num">Average lateness</th><th class="num">Open right now</th></tr>
+    
+        <tr><td>Atlas Property Management</td><td class="num">3</td>
+        <td class="num">32 days</td><td class="num">$2,400.00</td></tr>
+  </table>
+
+  <h2>The 14-day recovery plan</h2>
+  <ol class="plan"><li>Days 1 and 2: send the prepared follow-ups for every invoice 15 or more days past due. That is 7 emails covering $12,395.00. They are written below; read, adjust names if needed, and send from your own mailbox.</li><li>Day 3: fix the 2 invoices that were paid but still show open in your books, so your receivables number tells the truth.</li><li>Day 4: identify the 2 deposits ($2,050.00) that never got matched to an invoice, and record them against the right customer or invoice.</li><li>Day 7: change terms for the chronic late payer(s): Atlas Property Management. Options: deposits up front, card on file, or shorter terms with a late fee. One conversation beats twelve reminders.</li><li>Day 14: re-run your Money Agent. Anything still open moves to the next follow-up tier automatically.</li></ol>
+
+  <h2>Your follow-up drafts, ready to send</h2>
+  <p class="section-sub">Written to be pasted into your own email, from your own address, in a tone matched to how overdue each invoice is. Nothing sends unless you send it.</p>
+  
+        <div class="draft">
+          <div class="draft-head">
+            <span class="badge overdue-mild">Final notice</span>
+            <span class="draft-meta">Invoice 1042 · Atlas Property Management · $2,400.00 · 95 days past due</span>
+          </div>
+          <p class="draft-subject">Subject: Final notice before we pause: invoice 1042</p>
+          <pre class="draft-body">Hi Atlas Property Management team,
+
+Invoice 1042 for $2,400.00 has been outstanding for 95 days despite earlier reminders. I value the relationship, and I also have to protect the business, so this is my final direct request: please pay or contact me with a firm date within 5 business days. After that I will have to pause any current work and consider next steps for collection.
+
+Thank you,
+Brightside Design Studio</pre>
+        </div>
+        <div class="draft">
+          <div class="draft-head">
+            <span class="badge overdue-mild">Serious notice</span>
+            <span class="draft-meta">Invoice 1051 · TrueNorth HVAC · $1,850.00 · 72 days past due</span>
+          </div>
+          <p class="draft-subject">Subject: Overdue account: invoice 1051</p>
+          <pre class="draft-body">Hi TrueNorth HVAC team,
+
+Invoice 1051 for $1,850.00 is now 72 days past due. I need to bring this one to a close. Please arrange payment by the end of this week, or reply with a payment date I can plan around. If a payment plan would help, I am open to that conversation.
+
+Thank you,
+Brightside Design Studio</pre>
+        </div>
+        <div class="draft">
+          <div class="draft-head">
+            <span class="badge overdue-mild">Serious notice</span>
+            <span class="draft-meta">Invoice 1058 · Morrow Legal · $3,200.00 · 61 days past due</span>
+          </div>
+          <p class="draft-subject">Subject: Overdue account: invoice 1058</p>
+          <pre class="draft-body">Hi Morrow Legal team,
+
+Invoice 1058 for $3,200.00 is now 61 days past due. I need to bring this one to a close. Please arrange payment by the end of this week, or reply with a payment date I can plan around. If a payment plan would help, I am open to that conversation.
+
+Thank you,
+Brightside Design Studio</pre>
+        </div>
+        <div class="draft">
+          <div class="draft-head">
+            <span class="badge overdue-mild">Second notice</span>
+            <span class="draft-meta">Invoice 1063 · Peak Fitness Co · $475.00 · 48 days past due</span>
+          </div>
+          <p class="draft-subject">Subject: Second notice: invoice 1063, $475.00</p>
+          <pre class="draft-body">Hi Peak Fitness Co team,
+
+This is a second notice on invoice 1063 for $475.00, due June 07 and now 48 days past due. I want to keep things easy on both sides, so if there is an issue holding this up, reply and we will sort it out. Otherwise, please schedule payment this week.
+
+Thank you,
+Brightside Design Studio</pre>
+        </div>
+        <div class="draft">
+          <div class="draft-head">
+            <span class="badge overdue-mild">Second notice</span>
+            <span class="draft-meta">Invoice 1067 · Lakeview Realty · $1,540.00 · 39 days past due</span>
+          </div>
+          <p class="draft-subject">Subject: Second notice: invoice 1067, $1,540.00</p>
+          <pre class="draft-body">Hi Lakeview Realty team,
+
+This is a second notice on invoice 1067 for $1,540.00, due June 16 and now 39 days past due. I want to keep things easy on both sides, so if there is an issue holding this up, reply and we will sort it out. Otherwise, please schedule payment this week.
+
+Thank you,
+Brightside Design Studio</pre>
+        </div>
+        <div class="draft">
+          <div class="draft-head">
+            <span class="badge overdue-mild">Direct follow-up</span>
+            <span class="draft-meta">Invoice 1071 · Cedar &amp; Sage Cafe · $680.00 · 27 days past due</span>
+          </div>
+          <p class="draft-subject">Subject: Invoice 1071 is 27 days past due</p>
+          <pre class="draft-body">Hi Cedar &amp; Sage Cafe team,
+
+Following up on invoice 1071 for $680.00, which came due on June 28 and is now 27 days past due. Could you let me know when payment is scheduled? If anything about the invoice needs correcting, tell me and I will fix it the same day.
+
+Thank you,
+Brightside Design Studio</pre>
+        </div>
+        <div class="draft">
+          <div class="draft-head">
+            <span class="badge overdue-mild">Direct follow-up</span>
+            <span class="draft-meta">Invoice 1074 · Harbor Dental Group · $2,250.00 · 21 days past due</span>
+          </div>
+          <p class="draft-subject">Subject: Invoice 1074 is 21 days past due</p>
+          <pre class="draft-body">Hi Harbor Dental Group team,
+
+Following up on invoice 1074 for $2,250.00, which came due on July 04 and is now 21 days past due. Could you let me know when payment is scheduled? If anything about the invoice needs correcting, tell me and I will fix it the same day.
+
+Thank you,
+Brightside Design Studio</pre>
+        </div>
+        <div class="draft">
+          <div class="draft-head">
+            <span class="badge overdue-mild">Friendly reminder</span>
+            <span class="draft-meta">Invoice 1078 · Bloom Marketing · $1,120.00 · 12 days past due</span>
+          </div>
+          <p class="draft-subject">Subject: Quick note on invoice 1078</p>
+          <pre class="draft-body">Hi Bloom Marketing team,
+
+A quick note that invoice 1078 for $1,120.00 came due on July 13. It may already be in motion on your side; if so, please ignore this. If it helps to have the invoice again, just reply and I will resend it.
+
+Thank you,
+Brightside Design Studio</pre>
+        </div>
+        <div class="draft">
+          <div class="draft-head">
+            <span class="badge overdue-mild">Friendly reminder</span>
+            <span class="draft-meta">Invoice 1080 · Riverbend Church · $450.00 · 6 days past due</span>
+          </div>
+          <p class="draft-subject">Subject: Quick note on invoice 1080</p>
+          <pre class="draft-body">Hi Riverbend Church team,
+
+A quick note that invoice 1080 for $450.00 came due on July 19. It may already be in motion on your side; if so, please ignore this. If it helps to have the invoice again, just reply and I will resend it.
+
+Thank you,
+Brightside Design Studio</pre>
+        </div>
+
+  <div class="foot">
+    Prepared by OwnerAudits, a product of Woke Publishing Inc. · owneraudits.com ·
+    support@owneraudits.com<br>
+    Your Money Agent re-runs this same analysis on your computer whenever you want it.
+    The data used to prepare this report has been deleted from our systems.
+  </div>
+</div>
+</body>
+</html>
