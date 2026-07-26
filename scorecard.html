@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Get your Business Health Score | OwnerAudits</title>
+<meta name="description" content="Answer 20 honest questions and we email you your Business Health Score out of 100, with the 2026 benchmarks for your industry and the plain-English read on what it means.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 26 26'%3E%3Crect width='26' height='26' rx='6' fill='%230d7a5e'/%3E%3Cpath d='M7 13.5l4 4 8-9' stroke='%23fff' stroke-width='2.6' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="/styles.css">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SNJJ9XXLEM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-SNJJ9XXLEM');
+</script>
+<style>
+  .quiz-section { border: 1px solid var(--line, #dcebe4); border-radius: 14px; padding: 22px 24px; margin: 22px 0; background: var(--card, #fff); }
+  .quiz-section h3 { font-size: 19px; margin: 0 0 4px; }
+  .quiz-section .dim-sub { font-size: 13.5px; color: var(--soft, #5b6f67); margin: 0 0 14px; }
+  .q-row { display: flex; align-items: center; justify-content: space-between; gap: 14px; padding: 12px 0; border-bottom: 1px solid var(--line, #edf3f0); }
+  .q-row:last-of-type { border-bottom: 0; }
+  .q-row .q-text { font-size: 15px; line-height: 1.45; }
+  .q-row .q-why { display: block; font-size: 12.5px; color: var(--soft, #7d8f88); margin-top: 2px; }
+  .yn { display: flex; gap: 6px; flex-shrink: 0; }
+  .yn label { cursor: pointer; }
+  .yn input { position: absolute; opacity: 0; pointer-events: none; }
+  .yn span { display: inline-block; padding: 7px 16px; border: 1.5px solid var(--line, #c9d9d2); border-radius: 99px; font-size: 13.5px; font-weight: 600; color: var(--soft, #5b6f67); }
+  .yn input:checked + span { background: #0d7a5e; border-color: #0d7a5e; color: #fff; }
+  .profile-row { padding: 12px 0; border-bottom: 1px solid var(--line, #edf3f0); }
+  .profile-row:last-of-type { border-bottom: 0; }
+  .profile-row .q-text { font-size: 15px; margin-bottom: 9px; }
+  .pills { display: flex; flex-wrap: wrap; gap: 6px; }
+  .pills label { cursor: pointer; }
+  .pills input { position: absolute; opacity: 0; pointer-events: none; }
+  .pills span { display: inline-block; padding: 7px 14px; border: 1.5px solid var(--line, #c9d9d2); border-radius: 99px; font-size: 13px; font-weight: 600; color: var(--soft, #5b6f67); }
+  .pills input:checked + span { background: #0d7a5e; border-color: #0d7a5e; color: #fff; }
+  select.industry { font-size: 15px; padding: 10px 12px; border: 1.5px solid var(--line, #c9d9d2); border-radius: 9px; color: inherit; background: var(--card, #fff); max-width: 100%; }
+  .email-block input[type=text], .email-block input[type=email] { width: 100%; font-size: 15.5px; padding: 12px 14px; border: 1.5px solid var(--line, #c9d9d2); border-radius: 9px; margin-bottom: 10px; background: var(--card, #fff); color: inherit; box-sizing: border-box; }
+  .fineprint { font-size: 12.5px; color: var(--soft, #7d8f88); line-height: 1.5; margin-top: 10px; }
+  .submit-btn { font-size: 16.5px; padding: 14px 28px; border: 0; border-radius: 10px; background: #0d7a5e; color: #fff; font-weight: 700; cursor: pointer; width: 100%; }
+  .submit-btn:disabled { opacity: 0.55; cursor: default; }
+  .quiz-error { display: none; color: #a33420; font-size: 14px; margin-top: 10px; font-weight: 600; }
+  #thanks { display: none; }
+  @media (max-width: 560px) { .q-row { flex-direction: column; align-items: flex-start; gap: 8px; } }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="/"><svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true"><rect width="26" height="26" rx="6" fill="#0d7a5e"/><path d="M7 13.5l4 4 8-9" stroke="#fff" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>Owner<b>Audits</b></a>
+    <nav class="nav-links">
+      <a href="/sample-report.html">Sample report</a>
+      <a href="/faq.html">FAQ</a>
+      <a href="/about.html" class="hide-m">About</a>
+      <a class="btn" href="/business-audit.html">The Business Audit</a>
+    </nav>
+  </div>
+</header>
+
+<section>
+  <div class="wrap narrow">
+    <div class="kicker">Free, scored by return email</div>
+    <h2 class="section-title">Is your business actually healthy, or just busy?</h2>
+    <p style="font-size:17px;line-height:1.6;margin-bottom:14px;">From the inside, those two feel identical. You are shipping the work, the phone rings, money moves. Meanwhile QuickBooks' 2026 report found 59% of US small businesses carrying overdue invoices, averaging $17.7K, and most of those owners would have told you things were fine.</p>
+    <p style="margin-bottom:14px;">Running a business means watching five gauges at once: the money, the customers, the leads, the inbox, and the marketing. Nobody can watch all five while also doing the work. That is not a character flaw, it is arithmetic. But it is also exactly the kind of watching that has become automatable, which is why it is worth knowing your number now.</p>
+    <p style="margin-bottom:6px;">Answer the 20 questions below honestly, from what you actually know today, not what you could look up. We score every answer, weigh the five dimensions, and <b>email you your Business Health Score out of 100</b> with the plain-English read: which gauge is your weakest, what the 2026 published benchmarks say for your industry, and what your answers about AI and software spending suggest you should stop paying for.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap narrow">
+    <form id="quiz" method="post" novalidate>
+
+      <div class="quiz-section">
+        <h3>1. Money</h3>
+        <p class="dim-sub">Where cash actually stands, not where it feels like it stands.</p>
+        <div class="q-row"><div class="q-text">Do you know, without looking anything up, roughly how much is owed to you right now?</div><div class="yn"><label><input type="radio" name="q1" value="5" required><span>Yes</span></label><label><input type="radio" name="q1" value="0"><span>No</span></label></div></div>
+        <div class="q-row"><div class="q-text">Have you personally reviewed every invoice older than 60 days within the last month?</div><div class="yn"><label><input type="radio" name="q2" value="5" required><span>Yes</span></label><label><input type="radio" name="q2" value="0"><span>No</span></label></div></div>
+        <div class="q-row"><div class="q-text">Do you reconcile invoices against actual bank deposits at least monthly?<span class="q-why">Sent and paid are different lists. The gap between them is where money hides.</span></div><div class="yn"><label><input type="radio" name="q3" value="5" required><span>Yes</span></label><label><input type="radio" name="q3" value="0"><span>No</span></label></div></div>
+        <div class="q-row"><div class="q-text">Were you paid within 45 days on average over the last quarter?</div><div class="yn"><label><input type="radio" name="q4" value="5" required><span>Yes</span></label><label><input type="radio" name="q4" value="0"><span>No</span></label></div></div>
+      </div>
+
+      <div class="quiz-section">
+        <h3>2. Customers</h3>
+        <p class="dim-sub">Concentration, quiet drifting, and who actually pays on time.</p>
+        <div class="q-row"><div class="q-text">Is your biggest customer under 20% of your revenue?</div><div class="yn"><label><input type="radio" name="q5" value="5" required><span>Yes</span></label><label><input type="radio" name="q5" value="0"><span>No</span></label></div></div>
+        <div class="q-row"><div class="q-text">Could you name the customers who used to buy regularly and have gone quiet in the last 90 days?</div><div class="yn"><label><input type="radio" name="q6" value="5" required><span>Yes</span></label><label><input type="radio" name="q6" value="0"><span>No</span></label></div></div>
+        <div class="q-row"><div class="q-text">Do you know which customers habitually pay you late?</div><div class="yn"><label><input type="radio" name="q7" value="5" required><span>Yes</span></label><label><input type="radio" name="q7" value="0"><span>No</span></label></div></div>
+        <div class="q-row"><div class="q-text">Does any part of your revenue repeat on a schedule, like a retainer or subscription?</div><div class="yn"><label><input type="radio" name="q8" value="5" required><span>Yes</span></label><label><input type="radio" name="q8" value="0"><span>No</span></label></div></div>
+      </div>
+
+      <div class="quiz-section">
+        <h3>3. Leads</h3>
+        <p class="dim-sub">Where buyers come from, and how fast anyone answers them.</p>
+        <div class="q-row"><div class="q-text">Do you record where every new lead comes from?</div><div class="yn"><label><input type="radio" name="q9" value="5" required><span>Yes</span></label><label><input type="radio" name="q9" value="0"><span>No</span></label></div></div>
+        <div class="q-row"><div class="q-text">Do you know which source produced your last five paying customers?</div><div class="yn"><label><input type="radio" name="q10" value="5" required><span>Yes</span></label><label><input type="radio" name="q10" value="0"><span>No</span></label></div></div>
+        <div class="q-row"><div class="q-text">Does every new lead get a reply within one business day?<span class="q-why">63% of B2B companies never answered an inbound demo request at all (RevenueHero, 2024).</span></div><div class="yn"><label><input type="radio" name="q11" value="5" required><span>Yes</span></label><label><input type="radio" name="q11" value="0"><span>No</span></label></div></div>
+        <div class="q-row"><div class="q-text">Do you know your rough lead-to-customer conversion rate?</div><div class="yn"><label><input type="radio" name="q12" value="5" required><span>Yes</span></label><label><input type="radio" name="q12" value="0"><span>No</span></label></div></div>
+      </div>
+
+      <div class="quiz-section">
+        <h3>4. Inbox</h3>
+        <p class="dim-sub">The place deals go to die quietly.</p>
+        <div class="q-row"><div class="q-text">Does your business inbox reach zero, or close to it, at least once a week?</div><div class="yn"><label><input type="radio" name="q13" value="5" required><span>Yes</span></label><label><input type="radio" name="q13" value="0"><span>No</span></label></div></div>
+        <div class="q-row"><div class="q-text">Are you certain no quote or proposal is sitting unanswered in there right now?</div><div class="yn"><label><input type="radio" name="q14" value="5" required><span>Yes</span></label><label><input type="radio" name="q14" value="0"><span>No</span></label></div></div>
+        <div class="q-row"><div class="q-text">Do you follow up at least twice on every quote you send?<span class="q-why">Deals close on follow-up, and an unanswered quote is a decision made by default.</span></div><div class="yn"><label><input type="radio" name="q15" value="5" required><span>Yes</span></label><label><input type="radio" name="q15" value="0"><span>No</span></label></div></div>
+        <div class="q-row"><div class="q-text">Do promises made over email get tracked anywhere outside the inbox itself?</div><div class="yn"><label><input type="radio" name="q16" value="5" required><span>Yes</span></label><label><input type="radio" name="q16" value="0"><span>No</span></label></div></div>
+      </div>
+
+      <div class="quiz-section">
+        <h3>5. Marketing</h3>
+        <p class="dim-sub">Whether the spending and the sending actually produce buyers.</p>
+        <div class="q-row"><div class="q-text">If you run ads, do you know what a new customer costs you? If you do not run ads, was that a deliberate decision made with numbers in front of you?</div><div class="yn"><label><input type="radio" name="q17" value="5" required><span>Yes</span></label><label><input type="radio" name="q17" value="0"><span>No</span></label></div></div>
+        <div class="q-row"><div class="q-text">Do you know your email open and click rates?</div><div class="yn"><label><input type="radio" name="q18" value="5" required><span>Yes</span></label><label><input type="radio" name="q18" value="0"><span>No</span></label></div></div>
+        <div class="q-row"><div class="q-text">Have you compared any marketing number of yours against a published industry benchmark in the last year?</div><div class="yn"><label><input type="radio" name="q19" value="5" required><span>Yes</span></label><label><input type="radio" name="q19" value="0"><span>No</span></label></div></div>
+        <div class="q-row"><div class="q-text">Could you say which marketing activity produced actual revenue last month?</div><div class="yn"><label><input type="radio" name="q20" value="5" required><span>Yes</span></label><label><input type="radio" name="q20" value="0"><span>No</span></label></div></div>
+      </div>
+
+      <div class="quiz-section">
+        <h3>About you and your tools</h3>
+        <p class="dim-sub">Not scored. This is how we make your score email actually about your business.</p>
+        <div class="profile-row">
+          <div class="q-text">What industry are you in?</div>
+          <select class="industry" name="industry" required>
+            <option value="">Choose one</option>
+            <option>Professional services and consulting</option>
+            <option>Health and fitness</option>
+            <option>Home services and construction</option>
+            <option>Restaurants and food</option>
+            <option>Real estate</option>
+            <option>Legal</option>
+            <option>Retail and ecommerce</option>
+            <option>Financial services</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="profile-row">
+          <div class="q-text">Are you using AI in the business today?</div>
+          <div class="pills">
+            <label><input type="radio" name="ai_use" value="Not yet" required><span>Not yet</span></label>
+            <label><input type="radio" name="ai_use" value="Dabbling"><span>Dabbling with it</span></label>
+            <label><input type="radio" name="ai_use" value="Weekly"><span>Weekly for real work</span></label>
+            <label><input type="radio" name="ai_use" value="Running parts"><span>It runs parts of the business</span></label>
+          </div>
+        </div>
+        <div class="profile-row">
+          <div class="q-text">Roughly what do you pay for software subscriptions each month, all in?</div>
+          <div class="pills">
+            <label><input type="radio" name="sub_spend" value="Under $100" required><span>Under $100</span></label>
+            <label><input type="radio" name="sub_spend" value="$100 to $300"><span>$100 to $300</span></label>
+            <label><input type="radio" name="sub_spend" value="$300 to $750"><span>$300 to $750</span></label>
+            <label><input type="radio" name="sub_spend" value="Over $750"><span>Over $750</span></label>
+          </div>
+        </div>
+      </div>
+
+      <div class="quiz-section email-block">
+        <h3>Where do we send your score?</h3>
+        <p class="dim-sub">Your score usually lands within a few minutes.</p>
+        <input type="text" name="first_name" placeholder="First name" autocomplete="given-name">
+        <input type="email" name="email_address" placeholder="Email address" autocomplete="email" required>
+        <noscript><p class="fineprint" style="color:#a33420;font-weight:600;">This form needs JavaScript to score your answers. If you prefer, email <a href="mailto:support@owneraudits.com">support@owneraudits.com</a> and we will score you by hand.</p></noscript>
+        <button type="submit" class="submit-btn" id="submitBtn">Email me my score</button>
+        <p class="quiz-error" id="quizError">Please answer every question above, then try again. If it still will not send, email us at support@owneraudits.com and we will score you by hand.</p>
+        <p class="fineprint">We email your score, then a short series on reading your five numbers. Unsubscribe any time. Your answers stay between us: we score them, we do not sell them, and we never ask for a single number out of your books. That is rather the point of how we build things.</p>
+      </div>
+
+    </form>
+
+    <div id="thanks" class="quiz-section">
+      <h3>Your score is on its way.</h3>
+      <p style="margin-bottom:10px;">It usually lands within a few minutes. Add <b>support@owneraudits.com</b> to your contacts so it does not get lost in spam, and while you wait, the <a href="/sample-report.html">sample report</a> shows what a computed audit looks like when it reads real books.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot">
+    <div>
+      <a class="logo" href="/"><svg width="24" height="24" viewBox="0 0 26 26" aria-hidden="true"><rect width="26" height="26" rx="6" fill="#0d7a5e"/><path d="M7 13.5l4 4 8-9" stroke="#fff" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>Owner<b>Audits</b></a>
+      <p>One business audit. One agent system. No subscription.</p>
+      <p>OwnerAudits is a product of Woke Publishing Inc., Tarpon Springs, Florida.<br>Support: <a href="mailto:support@owneraudits.com">support@owneraudits.com</a></p>
+    </div>
+    <div class="foot-links">
+      <a href="/business-audit.html">The Business Audit</a>
+      <a href="/sample-report.html">Sample report</a>
+      <a href="/export-guides.html">Export guides</a>
+      <a href="/faq.html">FAQ</a>
+      <a href="/about.html">About</a>
+      <a href="/terms.html">Terms and refunds</a>
+      <a href="/privacy.html">Privacy</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+// SWAP-ON-ACTIVATION: set KIT_FORM_ID to the Kit form's numeric ID once the Kit
+// account exists. Until it is set, the form shows the fallback error on submit.
+// Custom fields must be created in Kit with these exact keys: score_total,
+// score_band, s_money, s_customers, s_leads, s_inbox, s_marketing, weakest_dim,
+// ai_use, sub_spend, industry.
+var KIT_FORM_ID = "9728398";
+var SEND_FAIL = "We could not send your answers just now. Email us at support@owneraudits.com and we will score you by hand.";
+
+var DIMS = [
+  { key: "s_money",     label: "Money",     qs: ["q1","q2","q3","q4"] },
+  { key: "s_customers", label: "Customers", qs: ["q5","q6","q7","q8"] },
+  { key: "s_leads",     label: "Leads",     qs: ["q9","q10","q11","q12"] },
+  { key: "s_inbox",     label: "Inbox",     qs: ["q13","q14","q15","q16"] },
+  { key: "s_marketing", label: "Marketing", qs: ["q17","q18","q19","q20"] }
+];
+
+function bandFor(total) {
+  if (total >= 85) return "Excellent";
+  if (total >= 70) return "Good";
+  if (total >= 55) return "Fair";
+  return "Poor visibility";
+}
+
+document.getElementById("quiz").addEventListener("submit", function (e) {
+  e.preventDefault();
+  var form = e.target;
+  var err = document.getElementById("quizError");
+  err.style.display = "none";
+
+  if (!form.checkValidity()) {
+    form.reportValidity();
+    err.textContent = "Please answer every question above, then try again.";
+    err.style.display = "block";
+    return;
+  }
+
+  var fields = {};
+  var total = 0;
+  var weakest = null;
+  for (var i = 0; i < DIMS.length; i++) {
+    var d = DIMS[i], sub = 0;
+    for (var j = 0; j < d.qs.length; j++) {
+      sub += parseInt(form.elements[d.qs[j]].value, 10);
+    }
+    fields[d.key] = String(sub);
+    total += sub;
+    if (weakest === null || sub < weakest.sub) weakest = { label: d.label, sub: sub };
+  }
+  fields.score_total = String(total);
+  fields.score_band = bandFor(total);
+  fields.weakest_dim = weakest.label;
+  fields.industry = form.elements.industry.value;
+  fields.ai_use = form.elements.ai_use.value;
+  fields.sub_spend = form.elements.sub_spend.value;
+
+  if (!KIT_FORM_ID) { err.textContent = SEND_FAIL; err.style.display = "block"; return; }
+
+  var btn = document.getElementById("submitBtn");
+  btn.disabled = true;
+  btn.textContent = "Scoring your answers...";
+
+  var body = { email_address: form.elements.email_address.value, fields: fields };
+  if (form.elements.first_name.value) body.first_name = form.elements.first_name.value;
+
+  fetch("https://app.kit.com/forms/" + KIT_FORM_ID + "/subscriptions", {
+    method: "POST",
+    headers: { "Content-Type": "application/json", "Accept": "application/json" },
+    body: JSON.stringify(body)
+  }).then(function (r) {
+    if (!r.ok) throw new Error("bad status " + r.status);
+    form.style.display = "none";
+    document.getElementById("thanks").style.display = "block";
+    document.getElementById("thanks").scrollIntoView({ behavior: "smooth" });
+  }).catch(function () {
+    btn.disabled = false;
+    btn.textContent = "Email me my score";
+    err.textContent = SEND_FAIL;
+    err.style.display = "block";
+  });
+});
+</script>
+
+</body>
+</html>
