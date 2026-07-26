@@ -7,13 +7,25 @@
 <meta name="description" content="OwnerAudits was built by a career CEO and CFO who wasn't comfortable putting her companies' data inside other people's platforms. So she built an audit system that runs locally instead, and now you can own it too.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 26 26'%3E%3Crect width='26' height='26' rx='6' fill='%230d7a5e'/%3E%3Cpath d='M7 13.5l4 4 8-9' stroke='%23fff' stroke-width='2.6' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
 <link rel="stylesheet" href="/styles.css">
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-SNJJ9XXLEM"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-R1QRWM3NNV"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-  gtag('config', 'G-SNJJ9XXLEM');
+  gtag('config', 'G-R1QRWM3NNV');
 </script>
+<style>
+  .about-grid { display: flex; gap: 40px; align-items: flex-start; }
+  .about-grid > div:first-child { flex: 1.4; }
+  .founder-card { flex: 0.6; min-width: 240px; background: #f4faf7; border: 1px solid #dcebe4; border-radius: 16px; padding: 22px 22px 18px; text-align: center; }
+  .founder-card img { width: 100%; max-width: 240px; height: auto; border-radius: 12px; display: block; margin: 0 auto; }
+  .founder-card .fc-name { font-weight: 700; color: var(--ink, #13221d); margin-top: 14px; font-size: 15.5px; }
+  .founder-card .fc-role { font-size: 13px; color: var(--soft, #5b6f67); margin-top: 3px; line-height: 1.5; }
+  .about-shot { margin: 26px 0 6px; }
+  .about-shot img { width: 100%; height: auto; display: block; border-radius: 12px; border: 1px solid #dcebe4; box-shadow: 0 14px 40px rgba(13, 34, 25, 0.12); }
+  .about-shot figcaption { font-size: 13px; color: var(--soft, #5b6f67); margin-top: 10px; }
+  @media (max-width: 860px) { .about-grid { flex-direction: column; } .founder-card { min-width: 0; width: 100%; } }
+</style>
 </head>
 <body>
 
@@ -34,12 +46,25 @@
     <div class="kicker">About</div>
     <h2 class="section-title">Built by an operator who wouldn't hand her data to anyone. Including us.</h2>
 
-    <p style="font-size:17.5px;margin-bottom:16px;">OwnerAudits was not built by a software company. It was built by a career operator: a CEO and CFO in the online industry who has run the money side of multiple companies, including a multi-million-dollar online business she runs today. Her work is the unglamorous machinery that keeps a business alive: collections, reconciliation, lead flow, payroll, and knowing the numbers cold.</p>
+    <div class="about-grid">
+      <div>
+        <p style="font-size:17.5px;margin-bottom:16px;">OwnerAudits was not built by a software company. It was built by a career operator: a CEO and CFO in the online industry who has run the money side of multiple companies, including a multi-million-dollar online business she runs today. Her work is the unglamorous machinery that keeps a business alive: collections, reconciliation, lead flow, payroll, and knowing the numbers cold.</p>
+      </div>
+      <div class="founder-card">
+        <img src="/images/founder-character.png" alt="The operator behind OwnerAudits" width="240" height="240">
+        <div class="fc-name">The operator behind OwnerAudits</div>
+        <div class="fc-role">Career CEO and CFO. Runs the same five gauges on her own companies every month.</div>
+      </div>
+    </div>
 
     <h2 style="font-size:22px;margin:34px 0 10px;">Why this exists</h2>
     <p style="margin-bottom:16px;">When AI tools arrived, they all wanted the same thing from her companies: connect your accounts, upload your customer lists, let your financial data live on their servers, and pay every month for the privilege. She was never comfortable with that. A business's invoices, inbox, and customer list do not belong inside other companies' platforms, and she wasn't willing to put hers there.</p>
     <p style="margin-bottom:16px;">So she built the alternative for her own companies first: a small workforce of AI agents that runs entirely on the computer it is installed on. It reconciles the invoices against the deposits, scores the leads, reads the inbox for money sitting unanswered, checks the marketing against real industry benchmarks, and writes an owner's report against her goals every month. Nothing uploaded. Nothing subscribed to. Nobody else's servers.</p>
     <p style="margin-bottom:16px;">That is the product you are looking at. Not a demo built to raise money. The productized version of a system a working CFO built because she needed it, ran on real companies, and hardened through real month-ends.</p>
+    <figure class="about-shot">
+      <img src="/images/dashboard-hero.png" alt="The OwnerAudits dashboard she built for her own companies, shown with fictional sample data" loading="lazy">
+      <figcaption>The dashboard she built for her own companies, and the one you keep. Shown with fictional sample data.</figcaption>
+    </figure>
 
     <h2 style="font-size:22px;margin:34px 0 10px;">The advent of AI changed what you should pay for</h2>
     <p style="margin-bottom:16px;">Subscriptions made sense when software had to live in the cloud to be smart. That era is over. With today's AI, the analysis a business used to rent for $200 or more per month, or buy from a consultant for thousands of dollars, can run locally on an ordinary computer, against your own files, with your own keys. When the software runs on your machine, two things become true at once: your data is actually safe, because it never travels, and there is nothing for anyone to charge you monthly for. You should own it.</p>
